@@ -1,0 +1,185 @@
+
+/* Basic settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+header {
+    background-color: #12325b;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 18px 5%;
+}
+
+.logo {
+    color: #fbbf24;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fbbf24;
+}
+
+/* Banner */
+.banner {
+    min-height: 350px;
+    padding: 70px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #12325b, #2563eb);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease;
+}
+
+.banner h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.banner p {
+    margin: 12px 0;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    margin-top: 15px;
+    background-color: #fbbf24;
+    color: #12325b;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+/* Sections */
+section {
+    padding: 50px 7%;
+    scroll-margin-top: 100px;
+}
+
+section h2 {
+    text-align: center;
+    color: #12325b;
+    margin-bottom: 25px;
+}
+
+/* Information cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    flex: 1 1 220px;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+    border-bottom: 3px solid #2563eb;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px #00000020;
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* About and contact cards */
+#about > p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#contact .card,
+#admissions .card {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Banner animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #12325b;
+    color: white;
+    padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}

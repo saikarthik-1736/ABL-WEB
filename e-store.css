@@ -1,0 +1,205 @@
+
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Header and navigation */
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* Banner */
+.banner {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    margin: 8px;
+}
+
+/* Sections */
+section {
+    padding: 30px 5%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #172554;
+}
+
+/* Category links */
+.categories {
+    text-align: center;
+    background-color: white;
+}
+
+.categories a {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #172554;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.categories a:hover {
+    background-color: #93c5fd;
+}
+
+/* Product cards */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px #00000020;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    color: #1d4ed8;
+}
+
+.product-card p {
+    margin: 8px 0;
+}
+
+/* Discount label */
+.discount {
+    background-color: #dc2626;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* Prices */
+.price {
+    color: #15803d;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.old-price {
+    color: #777;
+    text-decoration: line-through;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #172554;
+}
+
+/* Comparison table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #172554;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .banner h2 {
+        font-size: 25px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
