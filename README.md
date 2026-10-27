@@ -4,7 +4,7 @@
 - **Name:** Sai Karthik
 - **Roll Number:** 26001125
 - **Branch:** CSE (AI & ML)
-- **Section:** YOUR_SECTION
+- **Section:** CSM-05
 
 ## Selected Case Studies
 
